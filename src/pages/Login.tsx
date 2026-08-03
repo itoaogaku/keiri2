@@ -30,10 +30,10 @@ export default function Login() {
       >
         <div className="mb-6 flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-lg font-bold text-white">
-            K
+            原
           </div>
           <div>
-            <div className="text-sm font-bold text-slate-800">Keiri</div>
+            <div className="text-sm font-bold text-slate-800">原D&S株式会社</div>
             <div className="text-xs text-slate-400">ログイン</div>
           </div>
         </div>
