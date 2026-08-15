@@ -240,6 +240,7 @@ export default function InvoiceDetail() {
         <table className="mt-8 w-full text-sm">
           <thead>
             <tr className="border-b-2 border-slate-300 text-left text-slate-500">
+              <th className="py-2">取引年月日</th>
               <th className="py-2">品目</th>
               <th className="py-2 text-right">数量</th>
               <th className="py-2 text-right">単価</th>
@@ -250,6 +251,7 @@ export default function InvoiceDetail() {
           <tbody>
             {inv.items.map((it) => (
               <tr key={it.id} className="border-b border-slate-100">
+                <td className="py-2 text-slate-600">{it.transactionDate || '—'}</td>
                 <td className="py-2 text-slate-800">{it.name || '—'}</td>
                 <td className="py-2 text-right text-slate-600">{it.quantity.toLocaleString()}</td>
                 <td className="py-2 text-right text-slate-600">{yen(it.unitPrice)}</td>

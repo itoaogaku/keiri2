@@ -27,7 +27,14 @@ export function generateInvoiceNumber(
 }
 
 function blankItem(): InvoiceItem {
-  return { id: newId(), name: '', quantity: 1, unitPrice: 0, taxRate: 10 }
+  return {
+    id: newId(),
+    transactionDate: toISODate(new Date()),
+    name: '',
+    quantity: 1,
+    unitPrice: 0,
+    taxRate: 10,
+  }
 }
 
 /**
