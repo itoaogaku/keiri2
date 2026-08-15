@@ -14,7 +14,7 @@ import {
 
 /** 明細の区分ラベル。立替金は相手向けPDFでは無記載にする */
 function itemCatLabel(it: InvoiceItem): string {
-  return it.isReimbursement ? '' : TAX_RATE_LABELS[it.taxRate]
+  return it.isReimbursement || it.noTaxLabel ? '' : TAX_RATE_LABELS[it.taxRate]
 }
 import StatusBadge from '../components/StatusBadge'
 
